@@ -9,14 +9,13 @@
 
 	font-family: 'EB Garamond', serif;
     font-family: 'Montserrat', sans-serif;
-	box-sizing: border-box;
-}
+    box-sizing: border-box;
+	}
 
 ol,
 ul,
 li {
 	list-style: none;
-	display: block;
 }
 table {
 	border-collapse: collapse;
@@ -44,10 +43,10 @@ select {
 }
 
 body {
-    position:absolute;
+    
+    height: 100vh;
     display: flex;
-    left: 50%;
-    transform: translate(-50%);
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -58,10 +57,9 @@ body {
 
 div {
     
-    display: block;
-    height: 416px;
-    width: 290px;
-
+    height: 389px;
+    width: 263px;
+    margin: 31px;
     padding: 27px;
 
     background-color: #fff;
@@ -71,7 +69,8 @@ h2 {
     color: #33793f;
     font-family: "Garamond";
     font-size: 48px;
-    font-weight: normal;
+    font-weight: 400;
+
 }
 
 h6 {
@@ -93,11 +92,11 @@ p {
 }
 @media screen and (min-width: 1025px) {
 div {
-    position: relative;
-    display: inline-block;
-    height: 416px;
-    width: 290px;
-
+    display: flex;
+    flex-direction: column;
+    height: 389px;
+    width: 263px;
+    padding: 27px;
     margin: 31px;
 
     background-color: #fff;
@@ -107,14 +106,15 @@ h2 {
     color: #33793f;
     font-family: "Garamond";
     font-size: 48px;
-    font-weight: normal;
+    font-weight: 400;
+
 }
 
 h6 {
     color: #999;
     font-family: "Montserrat";
     font-size: 14px;
-    font-weight: medium;
+    font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -123,6 +123,6 @@ p {
     color: #999;
     font-family: "Garamond";
     font-size: 24px;
-    font-weight: normal;
+    font-weight: 400;
 }
 }
